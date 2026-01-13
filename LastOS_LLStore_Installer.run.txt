@@ -1,0 +1,20 @@
+LastOS_LLStore_Installer.run:
+
+This is the LLStore packaged up to install itself to ANY Linux OS that has a GUI and supports XOJO (most do).
+
+Keep in mind that atomic/immutable distrobutions (especially those without stores) will be limited in what can be installed as only the users home folder and a few other areas are writable at all, all the Wine stuff should work, allowing all ssApps, ppApps and ppGames to work. Most LLGames will also work as these contain all the files required to run them and install to the users home folders.
+
+You can get apps to include from my Repository or just use the LLStore online if you prefer.
+https://github.com/LiveFreeDead?tab=repositories
+
+To install this you only need to make it executable, right click it and choose Properties, tick the "Allow Executing File as Program" box, then click/double click the file to run it.
+
+Or if you prefer terminal just open it to the folder it's in ~/Downloads/ for example and type:
+chattr +x ./LastOS_LLStore_Installer.run
+then type ./LastOS_LLStore_Installer.run to run it.
+
+It will ask for your sudo password so that it can install to /LastOS/LLStore/ this folder isn't able to be made on Immutable Distrobutions, so your only option is to download the version you extract to your home folder to run:
+
+https://github.com/LiveFreeDead/LastOSLinux_Repository/raw/refs/heads/main/llstore_latest.zip
+
+This already should have the "llstore" file set executable and any other tools it needs. run it by clicking/double clicking on the llstore file once you extract it.
